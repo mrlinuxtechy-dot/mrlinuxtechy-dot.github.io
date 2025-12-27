@@ -7,51 +7,76 @@
 
   <style>
     body {
+      margin: 0;
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
                    Helvetica, Arial, sans-serif;
-      margin: 0;
-      background: linear-gradient(180deg, #f6f8fa 0%, #eef1f4 100%);
-      color: #24292f;
+      background: #f5f7fa;
+      color: #1f2328;
       line-height: 1.6;
     }
 
     .container {
-      max-width: 900px;
-      margin: 48px auto;
-      background: #ffffff;
-      padding: 36px;
-      border-radius: 6px;
-      box-shadow: 0 1px 3px rgba(27,31,36,0.12);
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 48px 24px;
     }
 
-    h1 {
+    header {
+      text-align: center;
+      margin-bottom: 60px;
+    }
+
+    header h1 {
       margin-bottom: 6px;
     }
 
-    h2 {
-      margin-top: 36px;
-      border-bottom: 1px solid #d0d7de;
-      padding-bottom: 6px;
-    }
-
-    .header {
-      text-align: center;
-    }
-
-    .meta {
-      font-size: 14px;
+    header p {
       color: #57606a;
+      margin: 4px 0;
+    }
+
+    section {
+      margin-bottom: 56px;
+    }
+
+    h2 {
+      border-bottom: 2px solid #d0d7de;
+      padding-bottom: 8px;
+      margin-bottom: 24px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: #ffffff;
+      border-radius: 8px;
+      padding: 20px;
+      box-shadow: 0 2px 6px rgba(27,31,36,0.12);
+    }
+
+    .card h3 {
+      margin-top: 0;
+    }
+
+    .card a {
+      text-decoration: none;
+      color: #0969da;
+      font-weight: 500;
     }
 
     ul {
-      margin-left: 20px;
+      padding-left: 20px;
     }
 
     footer {
-      margin-top: 48px;
-      font-size: 13px;
-      color: #6e7781;
       text-align: center;
+      color: #6e7781;
+      font-size: 13px;
+      margin-top: 60px;
     }
   </style>
 </head>
@@ -60,88 +85,116 @@
 
 <div class="container">
 
-  <div class="header">
+  <header>
     <h1>Govardhan Reddy</h1>
     <p><strong>Linux Systems Trainer | Linux Administrator</strong></p>
-    <p class="meta">
-      Bangalore, Karnataka, India |
-      mrlinuxtechy@gmail.com
+    <p>Bangalore, Karnataka, India · mrlinuxtechy@gmail.com</p>
+  </header>
+
+  <section>
+    <h2>About</h2>
+    <p>
+      Linux Systems professional with 7 years of industry experience across
+      Linux system administration, enterprise infrastructure support,
+      escalation handling, and team leadership.
+      Focused on delivering practical, hands-on Linux training
+      based on real-world operational scenarios.
     </p>
-  </div>
+  </section>
 
-  <h2>About the Trainer</h2>
-  <p>
-    Linux Systems professional with 7 years of industry experience across Linux
-    system administration, enterprise infrastructure support, escalation handling,
-    and team leadership. Focused on delivering practical, hands-on Linux training
-    based on real-world operational scenarios rather than theory-only instruction.
-  </p>
+  <section>
+    <h2>Professional Summary</h2>
+    <ul>
+      <li>Total Experience: 7 Years</li>
+      <li>Intern & Freelancer: 2 Years</li>
+      <li>L2 Escalation Contact: 2 Years</li>
+      <li>Linux Team Lead: 3 Years (24×7 operations, team of 8 engineers)</li>
+      <li>Infrastructure exposure: ~16,000 physical servers, ~3,000 cloud instances</li>
+    </ul>
+  </section>
 
-  <h2>Professional Experience Summary</h2>
-  <ul>
-    <li>Total Experience: 7 Years</li>
-    <li>Intern & Freelancer: 2 Years</li>
-    <li>L2 Escalation Contact: 2 Years</li>
-    <li>Linux Team Lead: 3 Years (24x7 operations, team of 8 engineers)</li>
-    <li>Infrastructure scale: ~16,000 physical servers and ~3,000 cloud instances</li>
-  </ul>
+  <section>
+    <h2>Operating Systems & Tools</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Operating Systems</h3>
+        <ul>
+          <li>Red Hat Enterprise Linux (RHEL)</li>
+          <li>CentOS</li>
+          <li>Rocky Linux</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Tools & Technologies</h3>
+        <ul>
+          <li>Bash shell scripting</li>
+          <li>Git</li>
+          <li>YAML</li>
+          <li>Ansible (basics)</li>
+          <li>Prometheus & Grafana</li>
+          <li>Docker (basics)</li>
+          <li>CI/CD concepts</li>
+          <li>Kubernetes (introductory)</li>
+        </ul>
+      </div>
+    </div>
+  </section>
 
-  <h2>Operating Systems Covered</h2>
-  <ul>
-    <li>Red Hat Enterprise Linux (RHEL)</li>
-    <li>CentOS</li>
-    <li>Rocky Linux</li>
-  </ul>
+  <section>
+    <h2>Internal Training Materials (Reference)</h2>
+    <p>
+      The following materials were prepared for internal training and
+      onboarding sessions. These are shared here as reference documents.
+    </p>
 
-  <h2>Tools & Technologies Introduced</h2>
-  <ul>
-    <li>Bash shell scripting</li>
-    <li>Git (basics)</li>
-    <li>YAML fundamentals</li>
-    <li>Ansible (introductory playbooks)</li>
-    <li>Prometheus (monitoring fundamentals)</li>
-    <li>Grafana (dashboard basics)</li>
-    <li>Docker (basic concepts)</li>
-  </ul>
+    <div class="grid">
+      <div class="card">
+        <h3>Linux Fundamentals</h3>
+        <p>Advanced internal training session</p>
+        <a href="training-materials/Linux_Fundamentals_Training_advanced_session_1.pptx" target="_blank">
+          Download PPT
+        </a>
+      </div>
 
-  <h2>Infrastructure Migration Experience</h2>
-  <p>
-    Participated in a client infrastructure migration involving transition from
-    locally managed authentication to centralized authentication and shared storage.
-    Contributed to Samba AD-DC based authentication, centralized NFS sharing,
-    and coordinated execution within a planned maintenance window with minimal
-    impact to users.
-  </p>
+      <div class="card">
+        <h3>Linux System Administration</h3>
+        <p>Administration concepts and workflows</p>
+        <a href="training-materials/Linux_System_Administration_Presentation_session_2.pptx" target="_blank">
+          Download PPT
+        </a>
+      </div>
 
-  <h2>Certification</h2>
-  <p>
-    <strong>Red Hat Certified System Administrator (RHCSA)</strong>
-  </p>
+      <div class="card">
+        <h3>File Systems & LVM</h3>
+        <p>Logical Volume Management deep dive</p>
+        <a href="training-materials/LVM_Training_Presentation_Final.pptx" target="_blank">
+          Download PPT
+        </a>
+      </div>
+    </div>
+  </section>
 
-  <!-- COURSE CONTENT AT THE BOTTOM -->
-  <h2>Linux Training Curriculum (30–45 Days)</h2>
-  <ul>
-    <li>Linux and UNIX fundamentals, architecture, and file system hierarchy</li>
-    <li>RHEL installation and system administration basics</li>
-    <li>Basic and frequently used Linux commands</li>
-    <li>User and group management</li>
-    <li>Sudo configuration and permission management</li>
-    <li>Disk management: partitions, mounts, swap, and LVM</li>
-    <li>Boot process and boot troubleshooting (RHEL 6 & 7)</li>
-    <li>Process, service, and performance management</li>
-    <li>Network configuration and remote administration (SSH)</li>
-    <li>SELinux fundamentals</li>
-    <li>Job automation using cron and at</li>
-    <li>Backup and restore using tar and gzip</li>
-    <li>Software management using rpm and yum</li>
-    <li>NFS server configuration</li>
-    <li>DNS basics</li>
-    <li>Apache web server basics</li>
-    <li>Basic troubleshooting methodology and log analysis</li>
-  </ul>
+  <section>
+    <h2>Linux Training Curriculum (30–45 Days)</h2>
+    <ul>
+      <li>Linux & UNIX fundamentals, architecture, file system hierarchy</li>
+      <li>RHEL installation and system administration</li>
+      <li>User, group, sudo, and permission management</li>
+      <li>Disk management: partitions, mounts, swap, and LVM</li>
+      <li>Boot process and troubleshooting (RHEL 6 & 7)</li>
+      <li>Process, service, and performance management</li>
+      <li>Networking and remote administration (SSH)</li>
+      <li>SELinux basics</li>
+      <li>Job automation (cron, at)</li>
+      <li>Backup & restore (tar, gzip)</li>
+      <li>Software management (rpm, yum)</li>
+      <li>NFS, DNS, Apache basics</li>
+      <li>Real-world troubleshooting methodology</li>
+    </ul>
+  </section>
 
   <footer>
-    © Govardhan Reddy — Linux Systems Training
+    © Govardhan Reddy · Linux Systems Training
   </footer>
 
 </div>

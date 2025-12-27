@@ -1,203 +1,253 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Govardhan Reddy | Linux Systems Trainer</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<title>Mr Linux Techy | Linux Systems Trainer</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <style>
-    body {
-      margin: 0;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
-                   Helvetica, Arial, sans-serif;
-      background: #f5f7fa;
-      color: #1f2328;
-      line-height: 1.6;
-    }
+<style>
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+               Helvetica, Arial, sans-serif;
+  color: #e6edf3;
+  background: url("photos/background.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
 
-    .container {
-      max-width: 1000px;
-      margin: 0 auto;
-      padding: 48px 24px;
-    }
+.overlay {
+  background: rgba(10, 15, 25, 0.88);
+  min-height: 100vh;
+}
 
-    header {
-      text-align: center;
-      margin-bottom: 60px;
-    }
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 40px 24px;
+}
 
-    header h1 {
-      margin-bottom: 6px;
-    }
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 60px;
+}
 
-    header p {
-      color: #57606a;
-      margin: 4px 0;
-    }
+header h1 {
+  margin: 0;
+}
 
-    section {
-      margin-bottom: 56px;
-    }
+header p {
+  color: #9da7b3;
+  margin-top: 6px;
+}
 
-    h2 {
-      border-bottom: 2px solid #d0d7de;
-      padding-bottom: 8px;
-      margin-bottom: 24px;
-    }
+.profile-img {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  border: 3px solid #2f81f7;
+  object-fit: cover;
+}
 
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 20px;
-    }
+section {
+  margin-bottom: 56px;
+}
 
-    .card {
-      background: #ffffff;
-      border-radius: 8px;
-      padding: 20px;
-      box-shadow: 0 2px 6px rgba(27,31,36,0.12);
-    }
+h2 {
+  border-bottom: 2px solid #2f81f7;
+  padding-bottom: 8px;
+  margin-bottom: 24px;
+}
 
-    .card h3 {
-      margin-top: 0;
-    }
+.card {
+  background: rgba(22, 27, 34, 0.9);
+  padding: 22px;
+  border-radius: 10px;
+  box-shadow: 0 0 12px rgba(0,0,0,0.4);
+}
 
-    .card a {
-      text-decoration: none;
-      color: #0969da;
-      font-weight: 500;
-    }
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
 
-    ul {
-      padding-left: 20px;
-    }
+ul {
+  padding-left: 20px;
+}
 
-    footer {
-      text-align: center;
-      color: #6e7781;
-      font-size: 13px;
-      margin-top: 60px;
-    }
-  </style>
+a {
+  color: #58a6ff;
+  text-decoration: none;
+}
+
+footer {
+  text-align: center;
+  color: #8b949e;
+  font-size: 13px;
+  margin-top: 60px;
+}
+</style>
 </head>
 
 <body>
-
+<div class="overlay">
 <div class="container">
 
-  <header>
-    <h1>Govardhan Reddy</h1>
-    <p><strong>Linux Systems Trainer | Linux Administrator</strong></p>
-    <p>Bangalore, Karnataka, India · mrlinuxtechy@gmail.com</p>
-  </header>
+<header>
+  <div>
+    <h1>Mr Linux Techy</h1>
+    <p>Linux Systems Trainer | Linux Administrator</p>
+    <p>Bangalore, Karnataka · mrlinuxtechy@gmail.com</p>
+  </div>
+  <img src="photos/profile.png" alt="Mr Linux Techy" class="profile-img">
+</header>
 
-  <section>
-    <h2>About</h2>
-    <p>
-      Linux Systems professional with 7 years of industry experience across
-      Linux system administration, enterprise infrastructure support,
-      escalation handling, and team leadership.
-      Focused on delivering practical, hands-on Linux training
-      based on real-world operational scenarios.
-    </p>
-  </section>
+<section>
+<h2>About</h2>
+<div class="card">
+Linux systems professional with 7 years of industry experience across enterprise
+Linux administration, escalation handling, infrastructure operations, and team leadership.
+Training focuses on real-world scenarios rather than theoretical command execution.
+</div>
+</section>
 
-  <section>
-    <h2>Professional Summary</h2>
-    <ul>
-      <li>Total Experience: 7 Years</li>
-      <li>Intern & Freelancer: 2 Years</li>
-      <li>L2 Escalation Contact: 2 Years</li>
-      <li>Linux Team Lead: 3 Years (24×7 operations, team of 8 engineers)</li>
-      <li>Infrastructure exposure: ~16,000 physical servers, ~3,000 cloud instances</li>
-    </ul>
-  </section>
+<section>
+<h2>Certification</h2>
+<div class="card">
+<strong>Red Hat Certified System Administrator (RHCSA)</strong>
+</div>
+</section>
 
-  <section>
-    <h2>Operating Systems & Tools</h2>
-    <div class="grid">
-      <div class="card">
-        <h3>Operating Systems</h3>
-        <ul>
-          <li>Red Hat Enterprise Linux (RHEL)</li>
-          <li>CentOS</li>
-          <li>Rocky Linux</li>
-        </ul>
-      </div>
-      <div class="card">
-        <h3>Tools & Technologies</h3>
-        <ul>
-          <li>Bash shell scripting</li>
-          <li>Git</li>
-          <li>YAML</li>
-          <li>Ansible (basics)</li>
-          <li>Prometheus & Grafana</li>
-          <li>Docker (basics)</li>
-          <li>CI/CD concepts</li>
-          <li>Kubernetes (introductory)</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <section>
-    <h2>Internal Training Materials (Reference)</h2>
-    <p>
-      The following materials were prepared for internal training and
-      onboarding sessions. These are shared here as reference documents.
-    </p>
-
-    <div class="grid">
-      <div class="card">
-        <h3>Linux Fundamentals</h3>
-        <p>Advanced internal training session</p>
-        <a href="training-materials/Linux_Fundamentals_Training_advanced_session_1.pptx" target="_blank">
-          Download PPT
-        </a>
-      </div>
-
-      <div class="card">
-        <h3>Linux System Administration</h3>
-        <p>Administration concepts and workflows</p>
-        <a href="training-materials/Linux_System_Administration_Presentation_session_2.pptx" target="_blank">
-          Download PPT
-        </a>
-      </div>
-
-      <div class="card">
-        <h3>File Systems & LVM</h3>
-        <p>Logical Volume Management deep dive</p>
-        <a href="training-materials/LVM_Training_Presentation_Final.pptx" target="_blank">
-          Download PPT
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <section>
-    <h2>Linux Training Curriculum (30–45 Days)</h2>
-    <ul>
-      <li>Linux & UNIX fundamentals, architecture, file system hierarchy</li>
-      <li>RHEL installation and system administration</li>
-      <li>User, group, sudo, and permission management</li>
-      <li>Disk management: partitions, mounts, swap, and LVM</li>
-      <li>Boot process and troubleshooting (RHEL 6 & 7)</li>
-      <li>Process, service, and performance management</li>
-      <li>Networking and remote administration (SSH)</li>
-      <li>SELinux basics</li>
-      <li>Job automation (cron, at)</li>
-      <li>Backup & restore (tar, gzip)</li>
-      <li>Software management (rpm, yum)</li>
-      <li>NFS, DNS, Apache basics</li>
-      <li>Real-world troubleshooting methodology</li>
-    </ul>
-  </section>
-
-  <footer>
-    © Govardhan Reddy · Linux Systems Training
-  </footer>
-
+<section>
+<h2>Operating Systems & Tools</h2>
+<div class="grid">
+<div class="card">
+<strong>Operating Systems</strong>
+<ul>
+<li>Red Hat Enterprise Linux (RHEL)</li>
+<li>CentOS</li>
+<li>Rocky Linux</li>
+</ul>
 </div>
 
+<div class="card">
+<strong>Tools & Technologies</strong>
+<ul>
+<li>Bash shell scripting</li>
+<li>Git</li>
+<li>YAML fundamentals</li>
+<li>Ansible (basic playbooks)</li>
+<li>Prometheus & Grafana</li>
+<li>Docker (basics)</li>
+<li>CI/CD concepts</li>
+<li>Kubernetes (introductory)</li>
+</ul>
+</div>
+</div>
+</section>
+
+<section>
+<h2>AWS Concepts (Awareness Level)</h2>
+<div class="card">
+<ul>
+<li>AWS fundamentals and service overview</li>
+<li>EC2 instance creation and access</li>
+<li>Snapshots and backup concepts</li>
+<li>S3 buckets overview</li>
+<li>Elastic IP usage</li>
+<li>AWS Lightsail overview</li>
+</ul>
+</div>
+</section>
+
+<section>
+<h2>Industry Project Experience</h2>
+<div class="card">
+<p>
+Participated in a client infrastructure migration project, transitioning from
+local authentication to centralized authentication and shared storage.
+</p>
+<ul>
+<li>Centralized authentication using Samba AD-DC</li>
+<li>Centralized NFS-based file sharing</li>
+<li>Planned execution within a defined maintenance window</li>
+<li>Minimal impact to end users</li>
+</ul>
+<p>
+This experience is actively used during training to explain real enterprise scenarios.
+</p>
+</div>
+</section>
+
+<section>
+<h2>Personal Learning & Home Lab Exposure</h2>
+<div class="card">
+Previously built a personal Linux home lab for learning and experimentation.
+The setup was used to practice authentication, file sharing, service configuration,
+and monitoring concepts. Though no longer active, it significantly strengthened
+hands-on understanding.
+</div>
+</section>
+
+<section>
+<h2>Who Can Enroll</h2>
+<div class="card">
+<ul>
+<li>Freshers starting a career in Linux</li>
+<li>Working professionals building Linux administration skills</li>
+<li>Candidates seeking hands-on, industry-oriented Linux training</li>
+</ul>
+</div>
+</section>
+
+<section>
+<h2>Internal Training Materials (Reference)</h2>
+<div class="grid">
+<div class="card">
+<strong>Linux Fundamentals</strong><br>
+<a href="training-materials/Linux_Fundamentals_Training_advanced_session_1.pptx">Download PPT</a>
+</div>
+
+<div class="card">
+<strong>Linux System Administration</strong><br>
+<a href="training-materials/Linux_System_Administration_Presentation_session_2.pptx">Download PPT</a>
+</div>
+
+<div class="card">
+<strong>File Systems & LVM</strong><br>
+<a href="training-materials/LVM_Training_Presentation_Final.pptx">Download PPT</a>
+</div>
+</div>
+</section>
+
+<section>
+<h2>Linux Training Curriculum (30–45 Days)</h2>
+<div class="card">
+<ul>
+<li>Linux & UNIX fundamentals and architecture</li>
+<li>RHEL installation and administration</li>
+<li>User, group, sudo, permissions</li>
+<li>Disk management, swap, LVM</li>
+<li>Boot process and troubleshooting</li>
+<li>Process and service management</li>
+<li>Networking and SSH</li>
+<li>SELinux basics</li>
+<li>Job automation (cron, at)</li>
+<li>Backup & restore</li>
+<li>Package management (rpm, yum)</li>
+<li>NFS, DNS, Apache basics</li>
+<li>Enterprise troubleshooting methodology</li>
+</ul>
+</div>
+</section>
+
+<footer>
+© Mr Linux Techy · Linux Systems Training
+</footer>
+
+</div>
+</div>
 </body>
 </html>
